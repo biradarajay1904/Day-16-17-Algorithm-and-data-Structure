@@ -1,6 +1,6 @@
 package datastructure.com;
 
-public class primeNumbers {
+public class PrimeNumbers {
 
 	public static boolean isPrime(int num) {
 		if (num == 0 || num == 1) {
