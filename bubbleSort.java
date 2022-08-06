@@ -2,7 +2,7 @@ package datastructure.com;
 
 import java.util.Scanner;
 
-public class bubbleSort {
+public class BubbleSort {
 	int a[] = new int[10];
 
 	void getdata() {
