@@ -1,6 +1,6 @@
 package datastructure.com;
 
-public class primeNumbers {
+public class PrimeNumbers {
 
 	public static void main(String[] args) {
 
