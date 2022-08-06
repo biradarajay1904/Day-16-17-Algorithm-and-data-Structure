@@ -2,26 +2,38 @@ package datastructure.com;
 
 public class primeNumbers {
 
-	public static boolean isPrime(int num) {
-		if (num == 0 || num == 1) {
-			return false;
-		}
-		for (int i = 2; i < num; i++) {
-			if (num % i == 0) {
-				return false;
-			}
-		}
-		return true;
-	}
-
 	public static void main(String[] args) {
 
-		for (int i = 0; i <= 1000; i++) {
-			if (isPrime(i)) {
-				
-				System.out.print("\n" +i);
+		int count = 0;
+
+		for (int i = 10; i <= 1000; i++) {
+
+			int num = i, revNum = 0;
+			while (num != 0) {
+				int digit = num % 10;
+				num /= 10;
+				revNum = revNum * 10 + digit;
 			}
 
+			if (revNum == i) {
+				boolean isPrime = true;
+				for (int j = 2; j <= i / 2; j++) {
+
+					if (i % j == 0) {
+						isPrime = false;
+						break;
+					}
+
+				}
+				if (isPrime) {
+					System.out.print(i + " ");
+					count++;
+					if (count == 10) {
+						System.out.println();
+						count = 0;
+					}
+				}
+			}
 		}
 	}
 }
