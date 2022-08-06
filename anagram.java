@@ -3,7 +3,7 @@ package datastructure.com;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class anagram {
+public class Anagram {
 	static String st1, st2;
 
 	public static void main(String[] args) {
