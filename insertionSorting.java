@@ -6,7 +6,7 @@ package datastructure.com;
 */
 import java.util.Arrays;
 
-public class insertionSorting {
+public class InsertionSorting {
 
     public void insertionSort(String[] array) {
 
