@@ -2,7 +2,7 @@ package datastructure.com;
 
 import java.util.Scanner;
 
-public class mergeSort {
+public class MergeSort {
 	public void merge(int[] arr, int p, int q, int r) {
 
         int n1 = q - p + 1;
